@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>University information</title>
+</head>
+<body>
+<header>University Information</header>
+<div class="container">
+    {% block content %}
+    <div class="university_info">
+        <h3>University name: </h3>
+        <p>{{ info.university_name }}</p>
+        <br>
+        <h3>Rector information:</h3>
+        <p>{{info.rector_info}}</p>
+        <br>
+        <h3>Administrative subdivisions count: </h3>
+        <p>{{info.administrative_subdivision}}</p>
+        <br>
+        <h3>Tech subdivisions count: </h3>
+        <p>{{info.teach_subdivision}}</p>
+        <br>
+        <h3>Mega-faculty count: </h3>
+        <p>{{info.mega_faculty}}</p>
+        <br>
+        <h3>Faculty count:</h3>
+        <p>{{info.faculty}}</p>
+        <br>
+        <h3>Department count: </h3>
+        <p>{{info.department}}</p>
+    </div>
+    {% endblock content %}
+</div>
+</body>
+</html>

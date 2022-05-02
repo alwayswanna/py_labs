@@ -1,0 +1,125 @@
+{
+  "university_info": {
+    "university_name": "Уфимский государственный нефтяной технический университет",
+    "rector_info": "Баулин Олег Александрович (2022 г.)",
+    "administrative_subdivision": 8,
+    "teach_subdivision": 16,
+    "mega_faculty": 1,
+    "faculty": 4,
+    "department": 60
+  },
+  "current_subject": {
+    "number_of_program": 934,
+    "name_of_program": "OOP in Python",
+    "subject": "OOP",
+    "year_of_education": 2022,
+    "groups_count": 4
+  },
+  "group_info": [
+    {
+      "id": "Q31",
+      "students": [
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 123,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 124,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 125,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 126,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 127,
+          "education_salary": 10000
+        },{
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 128,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Олег Олегович",
+          "list_id": 129,
+          "education_salary": 7500
+        },
+        {
+          "pers_data": "Петров Максим Олегович",
+          "list_id": 130,
+          "education_salary": 5000
+        }
+      ]
+    },
+    {
+      "id": "Q32",
+      "students": [
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 131,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 132,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 133,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 134,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 135,
+          "education_salary": 10000
+        },{
+          "pers_data": "Иванов Максим Олегович",
+          "list_id": 136,
+          "education_salary": 10000
+        },
+        {
+          "pers_data": "Иванов Олег Олегович",
+          "list_id": 137,
+          "education_salary": 7500
+        },
+        {
+          "pers_data": "Петров Максим Олегович",
+          "list_id": 138,
+          "education_salary": 5000
+        }
+      ]
+    }
+  ],
+  "department_info": [
+    {
+      "id": "uuid_2Qc3",
+      "department_name": "Вычислительная техника и инженерная кибернетика (ВТИК)",
+      "lead_info": "Дамир Мунзирович Зарипов"
+    },
+    {
+      "id": "uuid_2Qc4",
+      "department_name": "Электротехника и электрооборудование предприятий (ЭЭП)",
+      "lead_info": "Марат Ильгизович Хакимьянов"
+    },
+    {
+      "id": "uuid_2Qc5",
+      "department_name": "Автоматизация, телекоммуникация и метрология (АТМ)",
+      "lead_info": "Закирничная Марина Михайловна"
+    }
+  ]
+}
