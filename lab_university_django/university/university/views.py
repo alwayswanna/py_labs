@@ -37,3 +37,12 @@ def groups_info(request):
     groups_info_from_json = DATA['group_info']
     return render(request, 'groups_info.html', {'info': groups_info_from_json})
 
+
+# Information about university structure.
+def university_structure(request):
+    un_structure_data = DATA['university_structure']
+    return render(request, 'university_structure.html', {'info': un_structure_data})
+
+# end
+# 2022-05-02
+# Created: https://github.com/alwayswanna

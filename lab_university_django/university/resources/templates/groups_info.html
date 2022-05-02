@@ -10,20 +10,37 @@
     <title>Groups information</title>
 </head>
 <body>
-<header>Groups Information</header>
+<header>
+    <h1>Groups Information</h1>
+</header>
 <div class="container">
     {% block content %}
-    <div class="university_info">
-        <table>
+    <div class="groups-info">
+        <table style="border-collapse: collapse; border: 1px solid black; width: 50%; height: auto">
             <tr>
-                <th>Group ID</th>
-                <th>Student ID</th>
-                <th>Student personal data</th>
-                <th>Education salary</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Group ID</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Student ID</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Student personal data</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Education salary</th>
             </tr>
+            {% for value in info %}
+            <td rowspan="9" style="border-collapse: collapse; border: 1px solid black;">
+                {{ value.id }}
+            </td>
+            {% for in_value in value.students %}
             <tr>
-
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ in_value.list_id }}
+                </td>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ in_value.pers_data }}
+                </td>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ in_value.education_salary }}
+                </td>
             </tr>
+            {% endfor %}
+            {% endfor %}
         </table>
     </div>
     {% endblock content %}
