@@ -109,17 +109,68 @@
     {
       "id": "uuid_2Qc3",
       "department_name": "Вычислительная техника и инженерная кибернетика (ВТИК)",
-      "lead_info": "Дамир Мунзирович Зарипов"
+      "lead_info": "Дамир Мунзирович Зарипов",
+      "teachers": [
+        {
+          "id": "teachers_1",
+          "position": "Teacher I",
+          "pers_data": "Мамаев Олег Петрович"
+        },
+        {
+          "id": "teachers_2",
+          "position": "Teacher II",
+          "pers_data": "Петров Мамай Олегович"
+        },
+        {
+          "id": "teachers_3",
+          "position": "Teacher I",
+          "pers_data": "Олегов Мамай Петрович"
+        }
+      ]
     },
     {
       "id": "uuid_2Qc4",
       "department_name": "Электротехника и электрооборудование предприятий (ЭЭП)",
-      "lead_info": "Марат Ильгизович Хакимьянов"
+      "lead_info": "Марат Ильгизович Хакимьянов",
+      "teachers": [
+        {
+          "id": "teachers_4",
+          "position": "Teacher I",
+          "pers_data": "Мамаев Олег Петрович"
+        },
+        {
+          "id": "teachers_5",
+          "position": "Teacher II",
+          "pers_data": "Петров Мамай Олегович"
+        },
+        {
+          "id": "teachers_6",
+          "position": "Teacher I",
+          "pers_data": "Олегов Мамай Петрович"
+        }
+      ]
     },
     {
       "id": "uuid_2Qc5",
       "department_name": "Автоматизация, телекоммуникация и метрология (АТМ)",
-      "lead_info": "Закирничная Марина Михайловна"
+      "lead_info": "Закирничная Марина Михайловна",
+      "teachers": [
+        {
+          "id": "teachers_7",
+          "position": "Teacher I",
+          "pers_data": "Мамаев Олег Петрович"
+        },
+        {
+          "id": "teachers_8",
+          "position": "Teacher II",
+          "pers_data": "Петров Мамай Олегович"
+        },
+        {
+          "id": "teachers_9",
+          "position": "Teacher I",
+          "pers_data": "Олегов Мамай Петрович"
+        }
+      ]
     }
   ]
 }

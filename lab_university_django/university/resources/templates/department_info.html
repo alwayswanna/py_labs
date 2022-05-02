@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Departments information</title>
+</head>
+<body>
+<header>
+    <h1>Departments Information</h1>
+</header>
+<div class="container">
+    {% block content %}
+    <div class="structure-info">
+        {% for value in info %}
+        <h3>ID:</h3>
+        <p> {{ value.id }}</p>
+        <h4>Department name:</h4>
+        <p>{{ value.department_name }}</p>
+        <h4>Leader info:</h4>
+        <p>{{ value.lead_info }}</p>
+        <h4>Teachers:</h4>
+        <table style="border-collapse: collapse; border: 1px solid black; width: 50%; height: auto">
+            <tr>
+                <th style="border-collapse: collapse; border: 1px solid black;">ID</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">RANK</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Teacher personal data</th>
+            </tr>
+            {% for in_value in value.teachers %}
+            <tr>
+                <td style="border-collapse: collapse; border: 1px solid black;">{{ in_value.id }}</td>
+                <td style="border-collapse: collapse; border: 1px solid black;">{{ in_value.position }}</td>
+                <td style="border-collapse: collapse; border: 1px solid black;">{{ in_value.pers_data }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endfor %}
+    </div>
+    {% endblock content %}
+</div>
+</body>
+</html>
