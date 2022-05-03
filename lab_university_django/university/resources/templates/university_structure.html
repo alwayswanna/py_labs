@@ -15,7 +15,44 @@
 <div class="container">
     {% block content %}
     <div class="structure-info">
-        <!-- TODO: here is university structure information-->
+        <h3>Университет: </h3>
+        <p>{{info.university_name}}</p>
+        <h3>Университет: </h3>
+        <p>{{info.university_name}}</p>
+        <h3>Административные подразделения:</h3>
+        <table style="border-collapse: collapse; border: 1px solid black; width: 50%; height: auto">
+            <tr>
+                <th style="border-collapse: collapse; border: 1px solid black;">ID</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Name</th>
+            </tr>
+            {% for value in info.administrative_groups %}
+            <tr>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ value.id }}
+                </td>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ value.name }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <h3>Учебная часть:</h3>
+        {% for value in info.education_groups %}
+        <h3>Мегафакультет:</h3>
+        <p>ID: {{ value.mega_faculty.id }}</p>
+        <p>Name: {{ value.mega_faculty.name }}</p>
+        {% for in_value in value.mega_faculty.faculties %}
+        <h3>{{ in_value.faculty_name }}</h3>
+        <p>ID: {{ in_value.faculty_id }}</p>
+        <h4>Направления подготовки:</h4>
+        {% for fc_value in in_value.department %}
+                <p> {{ fc_value }}</p>
+        {% endfor %}
+        {% endfor %}
+        <br>
+        {% endfor %}
+        <br>
+
     </div>
     {% endblock content %}
 </div>
