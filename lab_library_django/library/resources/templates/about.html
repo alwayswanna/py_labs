@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LibraryCentral#4</title>
+</head>
+<body>
+<header>
+    <h1>Центральная областная библиотека № 4</h1>
+</header>
+<div class="container">
+    {% block content %}
+    <div class="module">
+        <h3>{{ module.name }}</h3>
+        <h4>Книги данного раздела</h4>
+        <table style="border-collapse: collapse; border: 1px solid black; width: 50%; height: auto">
+            <tr>
+                <th style="border-collapse: collapse; border: 1px solid black;">Название</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Автор</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Краткое описание</th>
+                <th style="border-collapse: collapse; border: 1px solid black;">Ссылка</th>
+            </tr>
+            {% for value in books %}
+            <tr>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ value.name }}
+                </td>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ value.author }}
+                </td>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    {{ value.description }}
+                </td>
+                <td style="border-collapse: collapse; border: 1px solid black;">
+                    <a href="/book/{{ value.id }}">Ссылка</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+    {% endblock content %}
+</div>
+</body>
+</html>
